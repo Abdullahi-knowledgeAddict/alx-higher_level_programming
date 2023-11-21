@@ -11,4 +11,4 @@ def common_elements(set_1, set_2):
             The intersection of the set
     """
     # Note this can also be done with (set_1 &  set_2)
-    return {id_1 for id_1 in set_1 for id_2 in set_2 if id_1 == id_2}
+    return {id_1 for id_1 in set_1 if id_1 in set_2}
