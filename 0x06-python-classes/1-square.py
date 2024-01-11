@@ -1,34 +1,17 @@
 #!/usr/bin/python3
+
 # -*- coding: utf-8 -*-
-"""Modules Documentation.
-
-This module contains a class Square that defines by
-
-    -> Private instance attribute: size
-    -> Instantiation with size (no type/value verification)
-"""
+"""This Modules contains a class to define a square based on it size"""
 
 
 class Square:
-    """A class that defines a Square with it size
-
-    Attributes:
-        Size: a prive instance variable
-    """
+    """This class is for Square instances"""
 
     def __init__(self, size):
-        """Initializing the instance
+        """The method called when creating any instance of any class
 
-        args:
-            Size: The initial size of the square
+        Args:
+            size: The intiation size of the class instance
+
         """
         self.__size = size
-
-        @property
-        def size(self):
-            """size: This is the setter property"""
-            return size
-
-        @size.setter
-        def size(self, value):
-            self.__size = value
