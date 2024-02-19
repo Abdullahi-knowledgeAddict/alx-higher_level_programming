@@ -2,7 +2,7 @@
 A documentation for the module "2-matrix_divided.py" that contains a function
 of prototype "def matrix_divided(matrix, div):"
 
->>> matrix_divided =  __import__('1-matrix_divided').matrix_divided
+>>> matrix_divided =  __import__('2-matrix_divided').matrix_divided
 
 -> matrix must be a list of lists of integers or floats, otherwise raises a TypeError
 
