@@ -1,0 +1,32 @@
+A documentation also implementing TDD(Test Driven Development) for a funcion:
+
+def say_my_name(first_name, last_name="")
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+-> first_name and last_name must be strings otherwise, TypeError is raised with an exception message 'first_name must be a string' or 'last_name must be a string'
+
+>>> say_my_name('Aliyu', 12)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
+
+>>> say_my_name(12, 'Aliyu')
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+>>> say_my_name(None, 'Aliyu')
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+>>> say_my_name("", "")
+Traceback (most recent call last):
+...
+ValueError: first_name can't be an empty string
+
+>>> say_my_name(None, None)
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
