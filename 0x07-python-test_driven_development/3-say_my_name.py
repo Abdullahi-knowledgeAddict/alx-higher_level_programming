@@ -5,7 +5,7 @@
 
 
 def say_my_name(first_name, last_name=""):
-    """ A function that says \"My name is <first name> <last name>
+    """ A function that says "My name is <first name> <last name>"
 
     Args:
         first_name: As implied
@@ -13,13 +13,13 @@ def say_my_name(first_name, last_name=""):
 
     """
 
-    # check the user input
+    # Checking user input
     if type(first_name) != str:
         raise TypeError("first_name must be a string")
-    if type(last_name) != str:
+    elif type(last_name) != str:
         raise TypeError("last_name must be a string")
-    if first_name == "":
+    elif first_name == "":
         raise ValueError("first_name can't be an empty string")
 
-    # Since user input passed test
+    # Since user input passed
     print(f"My name is {first_name} {last_name}")
