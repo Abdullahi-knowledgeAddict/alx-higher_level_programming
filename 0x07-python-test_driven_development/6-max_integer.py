@@ -14,6 +14,5 @@ def max_integer(list=[]):
     while i < len(list):
         if list[i] > result:
             result = list[i]
-            print(list[i], "is greater")
         i += 1
     return result
